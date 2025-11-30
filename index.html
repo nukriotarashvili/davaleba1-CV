@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nukri Otarashvili - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <div class="cv-container">
+        
+        <div class="left-column">
+            <div class="profile-pic-container">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" id="profile-img">
+                <input type="file" id="profile-upload" accept="image/*" class="file-input-hidden">
+                <label for="profile-upload" class="upload-label">
+                    <span class="upload-icon">📷</span>
+                </label>
+            </div>
+
+            <div id="personal-info"></div>
+            <div id="contact-info"></div>
+            
+            <h3 class="section-title">Software</h3>
+            <div id="software-skills"></div>
+
+            <div class="logo-bottom">
+                <span class="logo-icon">❖</span> tian
+            </div>
+        </div>
+
+        <div class="right-column">
+            
+            <div class="header">
+                <div class="header-name">
+                    <span class="first-name">NUKRI</span><br>
+                    <span class="last-name">OTARASHVILI</span>
+                </div>
+                <div class="header-role">
+                    FRONTEND<br>
+                    <span class="role-highlight">DEVELOPER</span>
+                </div>
+            </div>
+
+            <h3 class="section-title">Profile</h3>
+            <p class="profile-text" id="profile-desc">
+                I am a Frontend Developer, I fully understand the process of
+                development of a digital product,
+                my job is to make a product usable and visually appealing,
+                My field of activity is web development using React and Node.js. Using modern technologies and best practices.
+                I am a self-taught developer, I am always learning new things and improving my skills. I am a team player and I am always willing to help others.
+                I am a quick learner and I am always willing to take on new challenges. I actively use AI tools to improve my productivity and efficiency.
+                Currently, my work involves vibe coding and I actively use supabase as a backend for my full-stack applications.
+
+            </p>
+
+            <div class="circles-grid">
+                <div class="circle-item circle-ux" data-percent="80"><div class="circle-inner">HTML</div></div>
+                <div class="circle-item circle-ui" data-percent="60"><div class="circle-inner">CSS</div></div>
+                <div class="circle-item circle-design" data-percent="90"><div class="circle-inner">JAVASCRIPT</div></div>
+                <div class="circle-item circle-ia" data-percent="40"><div class="circle-inner">AI</div></div>
+                <div class="circle-item circle-ia" data-percent="40"><div class="circle-inner">REACT</div></div>
+                <div class="circle-item circle-ia" data-percent="40"><div class="circle-inner">NODE.JS</div></div>
+            </div>
+
+            <h3 class="section-title">Work</h3>
+            <div class="timeline-container" id="work-timeline">
+                </div>
+
+            <h3 class="section-title section-title-education">Education</h3>
+            <div class="timeline-container" id="edu-timeline">
+                </div>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Head_of_a_Roman_Patrician_-_Otricoli_-_Museo_Torlonia.jpg/360px-Head_of_a_Roman_Patrician_-_Otricoli_-_Museo_Torlonia.jpg" 
+                 class="statue-image"
+                 alt="Statue">
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
