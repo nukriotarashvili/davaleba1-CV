@@ -16,7 +16,7 @@ const cvData = {
     software: [
         { name: "HTML", percent: 90 },
         { name: "CSS", percent: 75 },
-        { name: "JavaScript", percent: 80 },
+        { name: "JS", percent: 80 },
         { name: "AI", percent: 80 },
         { name: "React", percent: 70 },
         { name: "Node.js", percent: 60 }
@@ -239,12 +239,14 @@ function getCSSVariable(variableName) {
     return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
 }
 
-// წრეების hover ფერები
+// წრეების hover ფერები (HTML, CSS, JS, AI, React, Node.js)
 const circleHoverColors = {
-    'circle-ux': 'var(--accent-pink)',
-    'circle-ui': 'var(--accent-yellow)',
-    'circle-design': 'var(--accent-pink)',
-    'circle-ia': 'var(--accent-yellow)'
+    'circle-html':  'var(--accent-cyan)',   // HTML
+    'circle-css':   'var(--accent-pink)',   // CSS
+    'circle-js':    'var(--accent-yellow)', // JS
+    'circle-ai':    'var(--accent-cyan)',   // AI
+    'circle-react': 'var(--accent-pink)',   // React
+    'circle-node':  'var(--accent-yellow)'  // Node.js
 };
 
 function updateCircleBackground(circleElement, percent, color = null) {
